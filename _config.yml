@@ -1,0 +1,58 @@
+# Site settings
+title: YSbot
+#demail: your-email@domain.com
+description: >
+  '#10+ engineer in marine,#Dady of 2 kids,#fall in love with Sujin'
+  providing documentation and blog post pages.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://yoseobmite.github.io/ # the base hostname & protocol for your site
+git_address: https://github.com/yoseobmite/yoseobmite.github.io
+git_edit_address: https://github.com/yoseobmite/yoseobmite.github.io/tree/master/
+
+google_analytics: 'UA-108668950-1'
+disqus_shortname: 'yoseobmite'
+
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: yoseob #slate #solar #yoseob #simplex #flatly #spacelab #Cerulean #Flatly #paper #lumen #spacelab 
+# Build settings
+markdown: kramdown
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+timezone: Asia/Seoul
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
