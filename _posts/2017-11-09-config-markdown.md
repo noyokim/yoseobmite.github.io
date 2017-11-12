@@ -7,7 +7,7 @@ categories: [scrap]
 tags: [markdown]
 ---
 
-```no-highlight
+```bash
 Yep, I was looking for this too when I was upgrading to Jekyll 3. After deciphering all the plugins that the processing goes through I ended up with this:
 
 markdown: kramdown
