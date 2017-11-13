@@ -11,7 +11,7 @@ git_address: https://github.com/yoseobmite/yoseobmite.github.io
 git_edit_address: https://github.com/yoseobmite/yoseobmite.github.io/tree/master/
 
 google_analytics: 'UA-108668950-1'
-disqus_shortname: 'yoseobmite'
+# disqus_shortname: 'yoseobmite'
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
