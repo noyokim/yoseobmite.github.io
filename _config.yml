@@ -15,7 +15,7 @@ google_analytics: 'UA-108668950-1'
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: united #slate #solar #yoseob #simplex #flatly #spacelab #Cerulean #Flatly #paper #lumen #spacelab 
+bootwatch: cosmo #united #slate #solar #yoseob #simplex #flatly #spacelab #Cerulean #Flatly #paper #lumen #spacelab 
 # Build settings
 markdown: kramdown
 highlighter: rouge
