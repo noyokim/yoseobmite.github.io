@@ -45,8 +45,8 @@ nav:
     - { Tags: '/blog/tags/' }
   About:          
     - '/about/'
-  Github Project: 
-    - 'http://yoseobmite.github.io/'
+  #Github Project:
+  #  - 'http://yoseobmite.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
