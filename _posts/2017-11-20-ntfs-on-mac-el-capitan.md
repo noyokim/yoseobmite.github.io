@@ -1,4 +1,5 @@
 ---
+layout: post
 title :  'Write to NTFS Partitions in OS X 10.11 El Capitan'
 date : 2017-11-20 17:00:00 +07:00
 tags : [mac]
