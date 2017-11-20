@@ -10,6 +10,15 @@ $blue:     #6a9fb5;
 $magenta:  #aa759f;
 $brown:    #8f5536;
 $default:  #505050;
+
+$soyeon1:  #AB4642;
+$soyeon2:  #DC9656;
+$soyeon3:  #F7CA88;
+$soyeon4:  #A1B56C;
+$soyeon5:  #86C1B9;
+$soyeon6:  #7CAFC2;
+$soyeon7:  #BA8BAF;
+$soyeon8:  #A16946;
 $soyeon:   #3AA2F2;
 
 
@@ -17,7 +26,7 @@ $white:      #fff;
 $lightgrey:  #eee;
 $black:      #000;
 
-$theme-color: $soyeon;
+$theme-color: $soyeon7;
 $theme-color-dark: darken($theme-color, 10%);
 
 $post-date-color: #9a9a9a;
