@@ -1,6 +1,6 @@
 # Site Info
 title: Young-Seob Kim
-tagline: '10+차 엔지니어로 일하고 있습니다'
+tagline: '트윗 그리고 스크렙으로 공부하는것을 남겨봅니다.'
 description: '리트윗 과 스크렙으로 한것들입니다 초보라 서툴기 그지 없네요'
 baseurl: "/"
 url: http://yoseobmite.github.io
@@ -46,15 +46,15 @@ nav:
   About:          
     - '/about/'
   Github Project: 
-    - 'http://codinfox.github.io/'
+    - 'http://yoseobmite.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+  image: /public/img/Soyeon.png
+  caption: Original Artwork &copy; <a href="http://yoseobmite.github.io">Yoseon Kim</a>
 
 # Puglins
 mathjax: true # whether support mathjax
