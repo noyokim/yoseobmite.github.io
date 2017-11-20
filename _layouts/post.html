@@ -1,62 +1,50 @@
 ---
 layout: default
+archive: true
 ---
 
-<div class="container">
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="well">
-                <h4>RECENT POSTS</h4>
-                <ul class="list-unstyled post-list-container">
-                    {% for post in site.posts limit:5 %}
-                    <li><a href="{{ post.url | prepend: site.baseurl }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
-                    {% endfor %}
-                    <li><a href="{{ "/allposts" | prepend: site.baseurl }}">All posts ...</a></li>
-                </ul>
-            </div>
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
+    </header>
+    <section id="post-body">
+        {{content}}
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/{{ site.authorTwitter }}">
+        <img class="avatar" src="{{ "/" | relative_url  }}assets/images/avatar.png">
+        <div>
+            <span class="dark">{{ site.author }}</span>
+            <span>{{ site.description }}</span>
         </div>
+    </a>
 
-        <div class="col-md-8">
-             
-                <p>
-                        <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
-                        {% if page.tags.size > 0 %}
-                        &#8226; <span >on {% for tag in page.tags %}<a class="label label-info" href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
-                        {% endif %}
-                </p>
-                     
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+</footer>
 
-            <h1>{{ page.title }}</h1>
-            <div  id="markdown-content-container">{{ content }}</div>
-            <div id="content-container">
-            {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->
-            {% endif %}
-            </div>
-            {% if page.comments != false %}{% include disqus.html %}
-            {% endif %}
-        
-
-            <hr>
-            <ul class="pager">
-                {% if page.previous %}
-                <li class="previous">
-                    <a href="{{ page.previous.url | prepend: site.baseurl }}">
-                        <span aria-hidden="true">&larr;</span> Older
-                    </a>
-                </li>
-                {% endif %} {% if page.next %}
-                <li class="next">
-                    <a href="{{ page.next.url | prepend: site.baseurl }}">
-                      Newer <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </li>
-                {% endif %}
-            </ul>
-            </div>
-      
+<!-- Disqus comments -->
+{% if site.disqus %}
+    <div class="archive readmore">
+        <h3>Comments</h3>
+        {% include disqus.html %}
     </div>
-    
-</div>
+{% endif %}
 
-    
+<!-- Archive post list -->
+{% if page.archive %}
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">{{ post.title }}<aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+
+

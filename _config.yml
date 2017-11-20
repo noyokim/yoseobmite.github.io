@@ -1,58 +1,42 @@
-# Site settings
-title: YSbot
-#demail: your-email@domain.com
-description: >
-  '#10+ engineer in marine,#Dady of 2 kids,#fall in love with Sujin'
-  providing documentation and blog post pages.
+name: YSbot
+description: 10+ engineer in marine,#Dady of 2 kids,#fall in love with Sujin
+meta_description: "리트윗 과 웹어플리케이션 이것저것을 옮겨 담기만 합니다."
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://yoseobmite.github.io/ # the base hostname & protocol for your site
-git_address: https://github.com/yoseobmite/yoseobmite.github.io
-git_edit_address: https://github.com/yoseobmite/yoseobmite.github.io/tree/master/
+aboutPage: true
 
-google_analytics: 'UA-108668950-1'
-# disqus_shortname: 'yoseobmite'
-
-# theme options from https://bootswatch.com/
-# comment out this to use default Bootstrap
-bootwatch: cosmo #united #slate #solar #yoseob #simplex #flatly #spacelab #Cerulean #Flatly #paper #lumen #spacelab 
-# Build settings
 markdown: kramdown
 highlighter: rouge
-gems:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .idea/
-  - .gitignore
-  - README.md
-timezone: Asia/Seoul
+plugins: [jekyll-paginate]
+paginate: 20
+domain_name: 'http://yoseobmite.github.io'
+google_analytics: 'UA-108668950-1'
+disqus: false
+disqus_shortname: 'yoseobmite'
+
+# Details for the RSS feed generator
+url:            'http://yoseobmite.github.io'
+author:         'Your Name'
+authorTwitter:  'YourTwitterUsername'
+
+permalink:       /:year/:month/:day/:title/
+
 defaults:
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: post
-    sectionid: blog
-
-- scope:
-    path: _docs
-    type: docs
-  values:
-    layout: docs
-    sectionid: docs
-    seo:
-      type: "WebPage"
-
-collections:
-  docs:
-    permalink: /:collection/:path/
-    output: true
-  posts:
-    permalink: /blog/:year/:month/:day/:title/
-    output: true
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
