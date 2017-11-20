@@ -24,9 +24,9 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: Codinfox
-  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  name: Young-Seob Kim
+  description: A passionate <strong>developer and retwitter</strong>, learning to be a giant.
+  #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
    # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/yoseobmite/yoseobmite.github.io
@@ -54,7 +54,7 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/Soyeon.png
-  caption: Original Artwork &copy; <a href="http://yoseobmite.github.io">Yoseon Kim</a>
+  caption: Original Artwork &copy; <a href="http://yoseobmite.github.io">for Yo-seon Kim</a>
 
 # Puglins
 mathjax: true # whether support mathjax
