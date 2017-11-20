@@ -16,8 +16,8 @@ disqus_shortname: 'yoseobmite'
 
 # Details for the RSS feed generator
 url:            'http://yoseobmite.github.io'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+author:         'Young-Seob Kim'
+authorTwitter:  'se6644'
 
 permalink:       /:year/:month/:day/:title/
 
