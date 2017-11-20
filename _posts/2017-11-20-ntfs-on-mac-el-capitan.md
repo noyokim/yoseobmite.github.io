@@ -59,7 +59,8 @@ Terminal Mount NTFS Commands
 ### Re-enabling SIP
 Reboot into Recovery mode again, this time, to re-enable SIP. Within the Terminal, enter the following command to enable SIP and reboot back into OS X:
 ```no-highlight
-csrutil enablereboot
+csrutil enable
+reboot
 ```
 ### That's It!
 NTFS-3G will automatically mount your NTFS volumes in read-and-write mode once you reboot back into OS X. Go ahead and copy some files over to an NTFS volume to make sure it works. Well done!
