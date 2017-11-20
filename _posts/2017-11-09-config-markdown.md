@@ -7,9 +7,10 @@ categories: [scrap]
 tags: [markdown]
 ---
 
-```bash
+
 Yep, I was looking for this too when I was upgrading to Jekyll 3. After deciphering all the plugins that the processing goes through I ended up with this:
 
+```bash
 markdown: kramdown
 # !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
 # Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
