@@ -47,7 +47,8 @@ Therefore, we can't simply swap out the binary by using `sudo` and running `ln`.
 ### Disabling SIP
 Reboot your Mac, and hold ** Cmd + R ** to enter Recovery mode. Within the Terminal, enter the following command to disable SIP and reboot back into OS X:
 ```no-highlight
-csrutil disablereboot
+csrutil disable
+reboot
 ```
 ### Replacing the Binary Link
 Boot into OS X, and open a Terminal window. Within the Terminal, enter the following commands to swap out the link to the native `mount_ntfs` binary with a link to NTFS-3G's `mount_ntfs` binary:
