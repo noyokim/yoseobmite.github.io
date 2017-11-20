@@ -1,6 +1,9 @@
 ---
-profile: true
+layout: default
+title: Home
 ---
 
-{% include post-list.html %}
-{% include footer.html %}
+<div class="hero">
+  <img src="{{ site.baseurl }}{{ site.hero.image }}" />
+  <p>{{ site.hero.caption }}</p>
+</div>

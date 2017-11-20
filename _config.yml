@@ -1,42 +1,63 @@
-name: YSbot
-description: 10+ engineer in marine,#Dady of 2 kids,#fall in love with Sujin
-meta_description: "리트윗 과 웹어플리케이션 이것저것을 옮겨 담기만 합니다."
+# Site Info
+title: Young-Seob Kim
+tagline: '10+차 엔지니어로 일하고 있습니다'
+description: '리트윗 과 스크렙으로 한것들입니다 초보라 서툴기 그지 없네요'
+baseurl: "/"
+url: http://yoseobmite.github.io
+logo: '/public/logo.png'
 
-aboutPage: true
-
+# Site configurations
+gems:
+  - jekyll-paginate
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
 
-plugins: [jekyll-paginate]
-paginate: 20
-domain_name: 'http://yoseobmite.github.io'
-google_analytics: 'UA-108668950-1'
-disqus: false
-disqus_shortname: 'yoseobmite'
+version: 1.0.0
 
-# Details for the RSS feed generator
-url:            'http://yoseobmite.github.io'
-author:         'Young-Seob Kim'
-authorTwitter:  'se6644'
+# About/contact
+author:
+  name: Codinfox
+  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
+  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  contact:
+   # linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/yoseobmite/yoseobmite.github.io
+    # facebook:  <hide>
+    twitter:   https://twitter.com/se6644
+    # weibo:     http://weibo.com/41173780
+    # email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
 
-permalink:       /:year/:month/:day/:title/
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://codinfox.github.io/'
 
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-108668950-1' # leave blank if you don't want google analytics
+disqus_short_name: 'yoseobmite' # leave blank if you don't want disqus
+
