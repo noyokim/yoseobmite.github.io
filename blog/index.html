@@ -2,7 +2,6 @@
 layout: default
 title: Blog
 ---
-
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -11,16 +10,15 @@ title: Blog
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% if post.tags %} | 
     {% for tag in post.tags %}
     <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
     {% endif %}
-
     <article>
-      {{ post.excerpt | markdownify }}
+     <!-- {{ post.excerpt | markdownify }} -->
+      {{ post.excerpt | strip_html }}
     <article>
     <div class="post-more">
       {% if site.disqus_short_name %}
