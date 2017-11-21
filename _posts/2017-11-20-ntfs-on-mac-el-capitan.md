@@ -7,7 +7,7 @@ categories : [scrap]
 ---
 
 NTFS support in OS X is disappointing. You plug in a USB flash drive from a co-worker who uses Windows to simply copy over a file, only to realize that you can't actually write to NTFS-formatted drives on Mac out of the box.
-
+<!-- more -->
 ### Flash Drive
 That's kind of lame, to be honest. It's 2016, Apple, wake up! People who work together in the same office, on different operating systems, should be able to exchange files via USB flash drive with ease, without having to worry about formatting their drives with a cross-platform filesystem, like exFAT.
 

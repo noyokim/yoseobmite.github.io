@@ -11,7 +11,7 @@ tags: [etc]
 
 In this guide, we will be setting up a simple Python application using the Flask micro-framework on Ubuntu 16.04. The bulk of this article will be about how to set up the uWSGI application server to launch the application and Nginx to act as a front end reverse proxy.
 Prerequisites
-
+<!-- more -->
 Before starting on this guide, you should have a non-root user configured on your server. This user needs to have sudo privileges so that it can perform administrative functions. To learn how to set this up, follow our initial server setup guide.
 
 To learn more about uWSGI, our application server and the WSGI specification, you can read the linked section of this guide. Understanding these concepts will make this guide easier to follow.

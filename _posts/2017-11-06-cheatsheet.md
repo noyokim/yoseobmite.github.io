@@ -56,7 +56,7 @@ Alt-H1
 
 Alt-H2
 ------
-
+<!-- more -->
 <a name="emphasis"/>
 ## Emphasis
 
