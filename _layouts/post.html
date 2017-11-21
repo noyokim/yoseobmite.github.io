@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-
+  <!-- class post -->
 <div class="post">
+    <!-- class post-title -->
   <h1 class="post-title">{{ page.title }}</h1>
+      <!-- class post-date-->
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% if page.tags %} | 
   {% for tag in page.tags %}
@@ -14,9 +16,10 @@ layout: default
     {{ content }}
   </article>
 </div>
-
+    <!-- class related -->
 <div class="related">
   <h2>Related Posts</h2>
+      <!-- class related-post -->
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
@@ -32,6 +35,7 @@ layout: default
 </div>
 
 {% if site.disqus_short_name %}
+    <!-- class comments -->
 <div class="comments">
   <h2>Comments</h2>
   <div id="disqus_thread"></div>
