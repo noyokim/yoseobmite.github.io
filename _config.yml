@@ -53,7 +53,7 @@ tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/apple-touch-icon-precomposed.png
+  image: /public/img/Soyeon.png
   caption: Original Artwork &copy; <a href="http://yoseobmite.github.io">for Yo-seon Kim</a>
 
 # Puglins
