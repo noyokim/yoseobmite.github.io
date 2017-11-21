@@ -24,6 +24,7 @@ Our first step will be to install all of the pieces that we need from the reposi
 We need to update the local package index and then install the packages. The packages you need depend on whether your project uses Python 2 or Python 3.
 
 If you are using Python 2, type:
+
 ```bash
     sudo apt-get update
     sudo apt-get install python-pip python-dev nginx

@@ -6,7 +6,6 @@ categories: [blog]
 tags: [python]
 author: Young-Seob Kim
 comments: true
-
 ---
 
 ```python

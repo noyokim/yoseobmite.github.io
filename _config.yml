@@ -53,7 +53,7 @@ tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/img/Soyeon.png
+  image: /public/img/Soyeon_in.png
   caption: Original Artwork &copy; <a href="http://yoseobmite.github.io">for Yo-seon Kim</a>
 
 # Puglins
